@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_and_Input</title>
+</head>
+<body style="background-color:rgb(215, 215, 215)">
+    <!--burada action'un içine dosya ismi girerek aldığımız bilgileri back end diline gönderebiliriz-->
+    <form >
+                <!-- HTML5 Input Oluşturma-->
+        <!--NAME: odak sağlamak için label ile yazacağız-->
+        <h1 style="color:red"><b><ins>KULLANICI KAYIT FORMU:</ins></b></h1>
+        <hr>
+        <label style="color:red" for="name"><b>Name:</b> </label> <!--artık name yazısına tıklayınca da input'a odaklanacak-->
+        <br>
+        <input type="text" id="name" name="name" placeholder="your name..."> 
+        <br> <!--bu name kısmı içine ne yazacaksak onu back end aratırken kolaylık sağlar-->
+        <label style="color:red" for="email"><b>E-Mail:</b> </label> 
+        <br>
+        <input type="email" id="email" name="email" placeholder="your email..."> <!--bunun avantajı kullanıcın mecburen email girmesini sağlar-->
+        <br>
+        <label style="color:red" for="password"><b>Password:</b> </label> 
+        <br>
+        <input type="password" name="password" id="password" placeholder="your password">
+        <br>
+        <hr>
+        <label style="color:red" for="date"><b>Date:</b> </label>
+        <br>
+        <input type="date" name="date" id="date">
+        <br>
+        <hr>
+        <b style="color:red">Gender:</b> 
+        <br>
+        Male <!--bu sadece kullanıcının göreceği bir yazı asıl bilgiyi value sağlıyor-->
+        <input type="radio" name="gender" value="male">
+        Famele
+        <input type="radio" name="gender" value="famale">
+        Other
+        <input type="radio" name="gender" value="other"> <!--value burda back end dilinde arama yaparken yardımcı olsun diye var-->
+        <br> <!--burada tek bir tanesinin seçilebilmesi için hepsinin name'minin aynı olması lazım-->
+        <hr>
+        <b style="color:red">Hobbies:</b> 
+        <br>
+        Technology
+        <input type="checkbox" name="tech" id="tech" > <!--checked sayfa yenilendiğinde de seçili olmasını sağlar-->
+        Music
+        <input type="checkbox" name="music" id="music">
+        Art
+        <input type="checkbox" name="art" id="art">
+        <br>
+        <hr>
+        <b style="color:red">Degree:</b> 
+        <select name="degree" id="degree"> <!--alt listeleme yaparak listeden seçim yapmamızı sağlar-->
+            <option value="bachelor">Lisans</option>
+            <option value="msc" selected>Yüksek Lisans</option> <!--asıl hangisinin seçili olduğunu belirtir selected-->
+            <option value="phd">Doktora</option>
+            <br>
+        </select>
+        <hr>
+        <textarea name="massage" id="massage" cols="30" rows="10" placeholder="your massage..."></textarea> <!--bir not kısmı bırakır-->
+        <input type="submit" value="gönder"> <!--burada submit butonu bizim inputa girdiğimiz değerlerin hepsini action'da verdiğimiz back end diline göndermemizi sağlar-->
+        <!--<button type="submit">gönder</button> bu şekilde de oluşturulabilir--> 
+        <button type="reset">sil</button>
+    </form>
+</body>
+</html>

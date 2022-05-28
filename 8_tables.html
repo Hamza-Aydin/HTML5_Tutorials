@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables-HTML5-</title>
+
+    <style> 
+        table,
+        th,
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <!--bu kısım css'e giriyor ilerleyen derslerde göreceğiz tabloya kenar eklememizi sağlar-->
+</head>
+<body>
+    <table>
+
+        <thead> <!--tabloları da böyle iskeletlere ayırmak ilerde işimize yarayacak-->
+            <tr> <!--tablomuza içerik ekleme etiketi-->
+                <th>Name</th> <!--hem başlık hemde o başlığın kalın olarak eklenmesini sağlar bu etiket-->
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        
+        <tbody><!--bu şekilde kullanmak daha efektif-->
+            <tr>
+                <td>Hamza</td> <!--başlıklara satır eklemek için kullanılan etiket(<td>)-->
+                <td>Web Development</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>Mehmet</td>
+                <td>Siber</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>Melisa</td>
+                <td>Marketing</td>
+                <td>12500</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
